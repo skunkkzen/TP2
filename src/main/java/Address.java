@@ -12,19 +12,16 @@ public class Address {
 
 
     public String getStreetName() {return StreetName;}
-
     public void setStreetName(String streetName) {
         this.StreetName = streetName;
     }
 
     public String getDoorNo() {return DoorNo;}
-
     public void setDoorNo(String doorNo) {
         this.DoorNo = doorNo;
     }
 
     public String getPostalCode() {return PostalCode;}
-
     public void setPostalCode(String postalCode) {
         this.PostalCode = postalCode;
     }

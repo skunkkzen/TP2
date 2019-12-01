@@ -1,16 +1,26 @@
 public class Product {
 
-    //Variaveis
+    // Variaveis
 
     private String name;
     private String description;
     private String picture;
     private Category category;
     private float price;
-    private char unitytype;
+    private UnitType unitType;
 
     //Construtores
 
+    public Product(String name, String description, String picture, Category category, float price, UnitType unitType) {
+        this.name = name;
+        this.description = description;
+        this.picture = picture;
+        this.category = category;
+        this.price = price;
+        this.unitType = unitType;
+    }
+
+    //Métodos
 
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
@@ -27,12 +37,9 @@ public class Product {
     public float getPrice() {return price;}
     public void setPrice(float price) {this.price = price;}
 
-    public char getUnitytype() {return unitytype;}
-    public void setUnitytype(char unitytype) {this.unitytype = unitytype;}
+    public UnitType getUnitType() {return unitType;}
+    public void setUnitType(UnitType unitType) {this.unitType = unitType;}
 
-    public String getCategoryName(){return category.getName();}
-
-    public String getCategorycolor(){return category.getColor();}
-
-
+    public String getCategoryName() {return category.getName();}
+    public String getCategoryColor() {return category.getColor();}
 }

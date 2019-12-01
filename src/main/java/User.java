@@ -13,8 +13,6 @@ public class User {
 
     //Construtores
 
-
-
     public User(String name, String email, String password, String username){
         this.name = name;
         this.email = email;
@@ -25,7 +23,6 @@ public class User {
 
 
     //Métodos
-
 
     public String getname () {return name;}
     public String getEmail () {return email;}
